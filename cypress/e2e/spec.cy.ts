@@ -13,7 +13,7 @@ describe('Login Page Test', () => {
 
     cy.get('#submit-button').click();
 
-    cy.wait(1000);
+    cy.wait(3000);
 
     cy.fixture('data_set').then((data_set) => {
       data_set.data.forEach((item: any) => {
