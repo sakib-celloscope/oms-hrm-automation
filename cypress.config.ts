@@ -5,7 +5,7 @@ export default defineConfig({
     baseUrl: 'http://localhost:4300',
     experimentalMemoryManagement: true,
     // Reduce the number of tests kept in memory
-    numTestsKeptInMemory: 10,
+    numTestsKeptInMemory: 0,
 
     // Other e2e configurations
     setupNodeEvents(on, config) {

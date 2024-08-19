@@ -1,0 +1,41 @@
+{
+  "login_url": "https://oms.celloscope.net/auth/sign-in",
+  "others_info_url": "https://oms.celloscope.net/hrm/employee/others-info",
+  "login": {
+    "user_id": "hrm",
+    "password": "asdfgh"
+  },
+  "education_data": [
+    {
+      "employee_name": "কে,এ,এম,এম,রইসুল ইসলাম",
+      "data": [
+        {
+          "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
+          "exam_name": "স্নাতকোত্তর",
+          "group_name": "",
+          "subject_name": "chemistry",
+          "institute": "",
+          "passing_year": "2002",
+          "board_or_university": "শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়",
+          "class_or_division": "",
+          "cgpa": "4.44",
+          "cgpa_scale": "৫.০০",
+          "remarks": ""
+        },
+        {
+          "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
+          "exam_name": "স্নাতকোত্তর",
+          "group_name": "",
+          "subject_name": "BIOLOGY",
+          "institute": "",
+          "passing_year": "2002",
+          "board_or_university": "শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়",
+          "class_or_division": "",
+          "cgpa": "4.44",
+          "cgpa_scale": "৫.০০",
+          "remarks": ""
+        }
+      ]
+    }
+  ]
+}
