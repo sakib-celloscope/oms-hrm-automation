@@ -7,32 +7,234 @@
   },
   "education_data": [
     {
-      "employee_name": "কে,এ,এম,এম,রইসুল ইসলাম",
+      "employee_name": "মোঃ আরিফুজ্জামান",
       "data": [
         {
-          "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
-          "exam_name": "স্নাতকোত্তর",
-          "group_name": "",
-          "subject_name": "chemistry",
-          "institute": "",
-          "passing_year": "2002",
-          "board_or_university": "শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়",
-          "class_or_division": "",
-          "cgpa": "4.44",
+          "type": "বোর্ড",
+          "exam_name": "মাধ্যমিক স্কুল সার্টিফিকেট",
+          "group_name": "বিজ্ঞান বিভাগ",
+          "subject_name": "",
+          "institute": "Atwari Pilot High School",
+          "passing_year": "1999",
+          "board_or_university": "দিনাজপুর শিক্ষা বোর্ড",
+          "class_or_division": "প্রথম শ্রেণী",
+          "cgpa": "",
           "cgpa_scale": "৫.০০",
+          "remarks": ""
+        },
+        {
+          "type": "বোর্ড",
+          "exam_name": "উচ্চ মাধ্যমিক সার্টিফিকেট",
+          "group_name": "বিজ্ঞান বিভাগ",
+          "subject_name": "",
+          "institute": "Thakurgaon Government College, Thakurgaon",
+          "passing_year": "2001",
+          "board_or_university": "দিনাজপুর শিক্ষা বোর্ড",
+          "class_or_division": "প্রথম শ্রেণী",
+          "cgpa": "",
+          "cgpa_scale": "৫.০০",
+          "remarks": ""
+        },
+        {
+          "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
+          "exam_name": "স্নাতক",
+          "group_name": "",
+          "subject_name": "BBA",
+          "institute": "North South University",
+          "passing_year": "2010",
+          "board_or_university": "নর্থ সাউথ ইউনিভার্সিটি",
+          "class_or_division": "",
+          "cgpa": "2.61",
+          "cgpa_scale": "৪.০০",
           "remarks": ""
         },
         {
           "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
           "exam_name": "স্নাতকোত্তর",
           "group_name": "",
-          "subject_name": "BIOLOGY",
-          "institute": "",
-          "passing_year": "2002",
-          "board_or_university": "শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়",
+          "subject_name": "MDS",
+          "institute": "University of Dhaka",
+          "passing_year": "2019",
+          "board_or_university": "ঢাকা বিশ্ববিদ্যালয়",
           "class_or_division": "",
-          "cgpa": "4.44",
+          "cgpa": "3.3",
+          "cgpa_scale": "৪.০০",
+          "remarks": ""
+        }
+      ]
+    },
+    {
+      "employee_name": "পঙ্কজ কুমার পাল",
+      "data": [
+        {
+          "type": "বোর্ড",
+          "exam_name": "মাধ্যমিক স্কুল সার্টিফিকেট",
+          "group_name": "বিজ্ঞান বিভাগ",
+          "subject_name": "",
+          "institute": "Guagachhi Joyla High School",
+          "passing_year": "1998",
+          "board_or_university": "ময়মনসিংহ শিক্ষা বোর্ড",
+          "class_or_division": "দ্বিতীয় শ্রেণী",
+          "cgpa": "",
           "cgpa_scale": "৫.০০",
+          "remarks": ""
+        },
+
+        {
+          "type": "বোর্ড",
+          "exam_name": "উচ্চ মাধ্যমিক সার্টিফিকেট",
+          "group_name": "বিজ্ঞান বিভাগ",
+          "subject_name": "",
+          "institute": "Belkuchi College, Sirajganj",
+          "passing_year": "2000",
+          "board_or_university": "রাজশাহী শিক্ষা বোর্ড",
+          "class_or_division": "দ্বিতীয় শ্রেণী",
+          "cgpa": "",
+          "cgpa_scale": "৫.০০",
+          "remarks": ""
+        },
+
+        {
+          "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
+          "exam_name": "স্নাতক",
+          "group_name": "",
+          "subject_name": "Statistics",
+          "institute": "University of Rajshahi",
+          "passing_year": "2005",
+          "board_or_university": "রাজশাহী বিশ্ববিদ্যালয়",
+          "class_or_division": "প্রথম শ্রেণী",
+          "cgpa": "",
+          "cgpa_scale": "৪.০০",
+          "remarks": ""
+        },
+
+        {
+          "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
+          "exam_name": "স্নাতকোত্তর",
+          "group_name": "",
+          "subject_name": "Statistics",
+          "institute": "University of Rajshahi",
+          "passing_year": "2006",
+          "board_or_university": "রাজশাহী বিশ্ববিদ্যালয়",
+          "class_or_division": "প্রথম শ্রেণী",
+          "cgpa": "",
+          "cgpa_scale": "৪.০০",
+          "remarks": ""
+        }
+      ]
+    },
+    {
+      "employee_name": "কে,এ,এম,এম,রইসুল ইসলাম",
+      "data": [
+        {
+          "type": "বোর্ড",
+          "exam_name": "মাধ্যমিক স্কুল সার্টিফিকেট",
+          "group_name": "বিজ্ঞান বিভাগ",
+          "subject_name": "",
+          "institute": "Tejgaon Government High School",
+          "passing_year": "1993",
+          "board_or_university": "ঢাকা শিক্ষা বোর্ড",
+          "class_or_division": "প্রথম শ্রেণী",
+          "cgpa": "",
+          "cgpa_scale": "৫.০০",
+          "remarks": ""
+        },
+        {
+          "type": "বোর্ড",
+          "exam_name": "উচ্চ মাধ্যমিক সার্টিফিকেট",
+          "group_name": "বিজ্ঞান বিভাগ",
+          "subject_name": "",
+          "institute": "Tejgaon College",
+          "passing_year": "1995",
+          "board_or_university": "ঢাকা শিক্ষা বোর্ড",
+          "class_or_division": "প্রথম শ্রেণী",
+          "cgpa": "",
+          "cgpa_scale": "৫.০০",
+          "remarks": ""
+        },
+        {
+          "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
+          "exam_name": "স্নাতক",
+          "group_name": "",
+          "subject_name": "B.Sc.A.H",
+          "institute": "Bangladesh Agricultural University",
+          "passing_year": "2002",
+          "board_or_university": "বাংলাদেশ কৃষি বিশ্ববিদ্যালয়",
+          "class_or_division": "দ্বিতীয় শ্রেণী",
+          "cgpa": "",
+          "cgpa_scale": "৪.০০",
+          "remarks": ""
+        },
+
+        {
+          "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
+          "exam_name": "স্নাতকোত্তর",
+          "group_name": "",
+          "subject_name": "M.P.A",
+          "institute": "Dhaka University",
+          "passing_year": "2014",
+          "board_or_university": "ঢাকা বিশ্ববিদ্যালয়",
+          "class_or_division": "",
+          "cgpa": "3.43",
+          "cgpa_scale": "৪.০০",
+          "remarks": ""
+        }
+      ]
+    },
+    {
+      "employee_name": "মিনহাজুল আবেদীন",
+      "data": [
+        {
+          "type": "বোর্ড",
+          "exam_name": "মাধ্যমিক স্কুল সার্টিফিকেট",
+          "group_name": "বিজ্ঞান বিভাগ",
+          "subject_name": "",
+          "institute": "Sadakpur High School",
+          "passing_year": "2011",
+          "board_or_university": "বরিশাল শিক্ষা বোর্ড",
+          "class_or_division": "",
+          "cgpa": "5.00",
+          "cgpa_scale": "৫.০০",
+          "remarks": ""
+        },
+        {
+          "type": "বোর্ড",
+          "exam_name": "উচ্চ মাধ্যমিক সার্টিফিকেট",
+          "group_name": "বিজ্ঞান বিভাগ",
+          "subject_name": "",
+          "institute": "Milestone College",
+          "passing_year": "2013",
+          "board_or_university": "ঢাকা শিক্ষা বোর্ড",
+          "class_or_division": "",
+          "cgpa": "5.00",
+          "cgpa_scale": "৫.০০",
+          "remarks": ""
+        },
+
+        {
+          "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
+          "exam_name": "স্নাতক",
+          "group_name": "",
+          "subject_name": "Microbiology and Biotechnology",
+          "institute": "Jagannath University",
+          "passing_year": "2017",
+          "board_or_university": "জগন্নাথ বিশ্ববিদ্যালয়",
+          "class_or_division": "",
+          "cgpa": "3.88",
+          "cgpa_scale": "৪.০০",
+          "remarks": ""
+        },
+        {
+          "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
+          "exam_name": "স্নাতকোত্তর",
+          "group_name": "",
+          "subject_name": "Microbiology",
+          "institute": "Jagannath University",
+          "passing_year": "2018",
+          "board_or_university": "জগন্নাথ বিশ্ববিদ্যালয়",
+          "class_or_division": "",
+          "cgpa": "3.95",
+          "cgpa_scale": "৪.০০",
           "remarks": ""
         }
       ]
