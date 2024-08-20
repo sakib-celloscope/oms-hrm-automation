@@ -1,0 +1,31 @@
+{
+    "login_url": "https://oms.celloscope.net/auth/sign-in",
+    "others_info_url": "https://oms.celloscope.net/hrm/employee/others-info",
+    "login": {
+      "user_id": "hrm",
+      "password": "asdfgh"
+    },
+    "foreign_travel_data": [
+      {
+        "employee_name": "মোঃ আরিফুজ্জামান",
+        "data": [
+          {
+            "office_order_no": "",
+            "country": "",
+            "start_date": {
+              "year": "2019",
+              "month": "Dec",
+              "date": "12/3/2019"
+            },
+            "end_date": {
+              "year": "2019",
+              "month": "Dec",
+              "date": "12/4/2019"
+            },
+            "purpose": "This is the purpose of the project"
+          }
+        ]
+      }
+    ]
+  }
+  

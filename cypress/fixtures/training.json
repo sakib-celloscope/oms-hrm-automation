@@ -1,0 +1,56 @@
+{
+    "login_url": "https://oms.celloscope.net/auth/sign-in",
+    "others_info_url": "https://oms.celloscope.net/hrm/employee/others-info",
+    "login": {
+      "user_id": "hrm",
+      "password": "asdfgh"
+    },
+    "training_data": [
+      {
+        "employee_name": "মোঃ আরিফুজ্জামান",
+        "data": [
+          {
+            "training_type": "",
+            "training_location": "দেশী",
+            "country": "Bangladesh",
+            "course_title": "National capacity building on Coutering the financing of terrorism measures for Non  Profit organizations",
+            "name_of_institute": "United nations Office Of counter terrorism",
+            "location_of_institute": "Dhaka, Bangladesh",
+            "start_date": {
+              "year": "2019",
+              "month": "Dec",
+              "date": "12/3/2019"
+            },
+            "end_date": {
+              "year": "2019",
+              "month": "Dec",
+              "date": "12/4/2019"
+            },
+            "grade_position": "Completed",
+            "role": "প্রশিক্ষণার্থী"
+          },
+          {
+            "training_type": "",
+            "training_location": "দেশী",
+            "country": "Bangladesh",
+            "course_title": "National capacity building on Coutering the financing of terrorism measures for Non  Profit organizations",
+            "name_of_institute": "United nations Office Of counter terrorism",
+            "location_of_institute": "Dhaka, Bangladesh",
+            "start_date": {
+              "year": "2019",
+              "month": "Dec",
+              "date": "12/3/2019"
+            },
+            "end_date": {
+              "year": "2019",
+              "month": "Dec",
+              "date": "12/4/2019"
+            },
+            "grade_position": "Completed",
+            "role": "প্রশিক্ষণার্থী"
+          }
+        ]
+      }
+    ]
+  }
+  
