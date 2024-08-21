@@ -1,0 +1,37 @@
+{
+  "login_url": "https://oms.celloscope.net/auth/sign-in",
+  "others_info_url": "https://oms.celloscope.net/hrm/employee/others-info",
+  "login": {
+    "user_id": "hrm",
+    "password": "asdfgh"
+  },
+  "awards_data": [
+    {
+      "employee_name": "মোঃ আরিফুজ্জামান",
+      "data": [
+        {
+          "award_name": "ভারতের উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব",
+          "awarded_for": "ভারতের উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব",
+          "awarded_by": "uHealth Ltd.",
+          "award_date": {
+            "year": "2019",
+            "month": "Dec",
+            "date": "12/3/2019"
+          },
+          "remarks": "ভারতের উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগ"
+        },
+        {
+            "award_name": "ভারতের উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব",
+            "awarded_for": "ভারতের উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব",
+            "awarded_by": "uHealth Ltd.",
+            "award_date": {
+              "year": "2019",
+              "month": "Dec",
+              "date": "12/3/2019"
+            },
+            "remarks": "ভারতের উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগ"
+          }
+      ]
+    }
+  ]
+}

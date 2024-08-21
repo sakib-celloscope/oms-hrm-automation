@@ -1,0 +1,30 @@
+{
+    "login_url": "https://oms.celloscope.net/auth/sign-in",
+    "others_info_url": "https://oms.celloscope.net/hrm/employee/others-info",
+    "login": {
+      "user_id": "hrm",
+      "password": "asdfgh"
+    },
+    "language_data": [
+      {
+        "employee_name": "মোঃ আরিফুজ্জামান",
+        "data": [
+          {
+            "language_name": "বাংলা",
+            "reading_level": "উন্নত",
+            "writing_level": "মধ্যম",
+            "speaking_level": "অত্যন্ত দক্ষ",
+            "listening_level": "উন্নত"
+          },
+          {
+            "language_name": "ইংরেজি",
+            "reading_level": "মধ্যম",
+            "writing_level": "মধ্যম",
+            "speaking_level": "অত্যন্ত দক্ষ",
+            "listening_level": "উন্নত"
+          }
+        ]
+      }
+    ]
+  }
+  
