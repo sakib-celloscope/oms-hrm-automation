@@ -50,7 +50,7 @@ describe('Employee awards Data Entry', () => {
             }
 
             // award_date
-            if(award_item.award_date) {
+            if(award_item.award_date.year) {
                 cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(4) > .ant-form-item-control`).click();
                 cy.get('.ant-picker-header-year-btn').click();
             let clicksNeeded = 0;

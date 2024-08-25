@@ -7,30 +7,35 @@
   },
   "awards_data": [
     {
-      "employee_name": "মোঃ আরিফুজ্জামান",
+      "employee_name": "মৃন্ময় কান্তি রায়",
       "data": [
         {
-          "award_name": "ভারতের উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব",
-          "awarded_for": "ভারতের উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব",
-          "awarded_by": "uHealth Ltd.",
+          "award_name": "DG Award",
+          "awarded_for": "1st Departmental Training Course",
+          "awarded_by": "BIAM Foundation",
           "award_date": {
-            "year": "2019",
-            "month": "Dec",
-            "date": "12/3/2019"
+            "year": "",
+            "month": "",
+            "date": ""
           },
-          "remarks": "ভারতের উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগ"
-        },
+          "remarks": ""
+        }
+      ]
+    },
+    {
+      "employee_name": "মো: জিল্লুর রহমান",
+      "data": [
         {
-            "award_name": "ভারতের উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব",
-            "awarded_for": "ভারতের উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব",
-            "awarded_by": "uHealth Ltd.",
-            "award_date": {
-              "year": "2019",
-              "month": "Dec",
-              "date": "12/3/2019"
-            },
-            "remarks": "ভারতের উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগীত্ব দ্বারা অনুমোদিত শ্রেণীর উদ্যোগ"
-          }
+          "award_name": "NIS",
+          "awarded_for": "NIS",
+          "awarded_by": "MRA",
+          "award_date": {
+            "year": "",
+            "month": "",
+            "date": ""
+          },
+          "remarks": ""
+        }
       ]
     }
   ]
