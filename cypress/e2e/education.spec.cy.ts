@@ -23,40 +23,39 @@ describe('Employee Education Data Entry', () => {
         // visit others info page
         cy.visit(others_info_url);
 
-        //   click on education info
-        cy.get(':nth-child(3) > .ant-tabs-tab-btn').click();
         // employee search
-        cy.get(
-          '.mb-2 > .ant-form-item > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector'
-        ).type(item.employee_name);
-        cy.get('.ant-select-item-option-content').click();
+        cy.get('#search_box').type(item.employee_name);
+        cy.get('.anticon > img').click();
+        cy.get(':nth-child(2) > .ant-menu-title-content').click();
+        cy.get('.bg-white > :nth-child(1) > .ant-tabs-nav-wrap > .ant-tabs-nav-list > :nth-child(2) > .ant-tabs-tab-btn').click();
+        cy.get('app-others-info-form.ng-star-inserted > .ant-tabs > .ant-tabs-nav > .ant-tabs-nav-wrap > .ant-tabs-nav-list > :nth-child(3)').click();
         const data = item.data;
         data.forEach((education_item: any, index: any) => {
           // type
-          cy.log('education type' + education_item.type)
-          if (education_item.type !== 'বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান') {
-            cy.get(`:nth-child(${index + 1}) > .grid > .flex > .ant-radio-group > :nth-child(1) > :nth-child(2)`).click();
-          }
+          // cy.log('education type' + education_item.type)
+          // if (education_item.type !== 'বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান') {
+          //   cy.get(`:nth-child(${index + 1}) > .grid > .flex > .ant-radio-group > :nth-child(1) > :nth-child(2)`).click();
+          // }
 
           // exam_name
-          cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(2) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input`).click();
+          cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(1) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input`).click();
           cy.wait(500)
           cy.get(`[title="${education_item.exam_name}"] > .ant-select-item-option-content`).click();
 
           // group_name
           if(education_item.group_name) {
-            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(3) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input`).click();
+            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(2) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input`).click();
             cy.get(`[title="${education_item.group_name}"] > .ant-select-item-option-content`).click();
           }
 
           // subject name
           if(education_item.subject_name) {
-            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(4) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`).type(education_item.subject_name);
+            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(3) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`).type(education_item.subject_name);
           }
 
           // institute
           if(education_item.institute) {
-            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(5) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`).type(education_item.institute);
+            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(4) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`).type(education_item.institute);
           }
 
           // board_or_university
@@ -71,7 +70,7 @@ describe('Employee Education Data Entry', () => {
 
 
           // passing_year
-          cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(7) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .w-full`).click();
+          cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(6) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .w-full`).click();
           let clicksNeeded = 0;
           const year = education_item.passing_year;
 
@@ -99,27 +98,27 @@ describe('Employee Education Data Entry', () => {
 
           // class_or_division
           if (education_item.class_or_division) {
-            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(8) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input`).click();
+            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(7) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input`).click();
             cy.get(`[title="${education_item.class_or_division}"] > .ant-select-item-option-content`).click();
           }
 
 
           // cgpa_scale
           if(education_item.cgpa_scale) {
-            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(9) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`).click();
+            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(8) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`).click();
           cy.get(`[title="${education_item.cgpa_scale}"] > .ant-select-item-option-content`).click();
           }
 
 
           // cgpa
           if(education_item.cgpa) {
-            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(10) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`).type(education_item.cgpa);
+            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(9) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`).type(education_item.cgpa);
           }
 
 
           // remarks
           if(education_item.remarks) {
-            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(11) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`).type(education_item.remarks)
+            cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(10) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`).type(education_item.remarks)
           }
 
           // checking index

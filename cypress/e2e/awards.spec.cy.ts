@@ -22,16 +22,13 @@ describe('Employee awards Data Entry', () => {
         awards_data.forEach((item: any) => {
           // visit others info page
           cy.visit(others_info_url);
-  
-          //   click on awards info
-          cy.get('.ant-dropdown-trigger').click();
-          cy.get(':nth-child(6) > .ant-menu-title-content').click();
 
           // employee search
-          cy.get(
-            '.mb-2 > .ant-form-item > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector'
-          ).type(item.employee_name);
-          cy.get('.ant-select-item-option-content').click();
+          cy.get('#search_box').type(item.employee_name);
+          cy.get('.anticon > img').click();
+          cy.get(':nth-child(2) > .ant-menu-title-content').click();
+          cy.get('.bg-white > :nth-child(1) > .ant-tabs-nav-wrap > .ant-tabs-nav-list > :nth-child(2) > .ant-tabs-tab-btn').click();
+          cy.get('.ant-tabs-nav-list > :nth-child(12)').click();
           const data = item.data;
           data.forEach((award_item: any, index: any) => {
             // award_name

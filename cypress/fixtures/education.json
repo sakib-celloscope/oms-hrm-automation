@@ -1,9 +1,9 @@
 {
-  "login_url": "https://oms.celloscope.net/auth/sign-in",
-  "others_info_url": "https://oms.celloscope.net/hrm/employee/others-info",
+  "login_url": "https://oms.mra.gov.bd/auth/sign-in",
+  "others_info_url": "https://oms.mra.gov.bd/hrm/employee/basic-info/list",
   "login": {
-    "user_id": "hrm",
-    "password": "asdfgh"
+    "user_id": "admin",
+    "password": "Asdf@1234"
   },
   "education_data": [
     {
@@ -11,7 +11,7 @@
       "data": [
         {
           "type": "বোর্ড",
-          "exam_name": "মাধ্যমিক স্কুল সার্টিফিকেট",
+          "exam_name": "মাধ্যমিক স্কুল সার্টিফিকেট/দাখিল/সমমান",
           "group_name": "বিজ্ঞান বিভাগ",
           "subject_name": "",
           "institute": "Atwari Pilot High School",
@@ -24,7 +24,7 @@
         },
         {
           "type": "বোর্ড",
-          "exam_name": "উচ্চ মাধ্যমিক সার্টিফিকেট",
+          "exam_name": "উচ্চ মাধ্যমিক সার্টিফিকেট/আলীম/সমমান",
           "group_name": "বিজ্ঞান বিভাগ",
           "subject_name": "",
           "institute": "Thakurgaon Government College, Thakurgaon",
@@ -37,7 +37,7 @@
         },
         {
           "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
-          "exam_name": "স্নাতক",
+          "exam_name": "স্নাতক/ফাজিল/সমমান",
           "group_name": "",
           "subject_name": "BBA",
           "institute": "North South University",
@@ -50,7 +50,7 @@
         },
         {
           "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
-          "exam_name": "স্নাতকোত্তর",
+          "exam_name": "স্নাতকোত্তর/কামিল/সমমান",
           "group_name": "",
           "subject_name": "MDS",
           "institute": "University of Dhaka",
@@ -68,7 +68,7 @@
       "data": [
         {
           "type": "বোর্ড",
-          "exam_name": "মাধ্যমিক স্কুল সার্টিফিকেট",
+          "exam_name": "মাধ্যমিক স্কুল সার্টিফিকেট/দাখিল/সমমান",
           "group_name": "বিজ্ঞান বিভাগ",
           "subject_name": "",
           "institute": "Guagachhi Joyla High School",
@@ -82,7 +82,7 @@
 
         {
           "type": "বোর্ড",
-          "exam_name": "উচ্চ মাধ্যমিক সার্টিফিকেট",
+          "exam_name": "উচ্চ মাধ্যমিক সার্টিফিকেট/আলীম/সমমান",
           "group_name": "বিজ্ঞান বিভাগ",
           "subject_name": "",
           "institute": "Belkuchi College, Sirajganj",
@@ -96,7 +96,7 @@
 
         {
           "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
-          "exam_name": "স্নাতক",
+          "exam_name": "স্নাতক/ফাজিল/সমমান",
           "group_name": "",
           "subject_name": "Statistics",
           "institute": "University of Rajshahi",
@@ -110,7 +110,7 @@
 
         {
           "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
-          "exam_name": "স্নাতকোত্তর",
+          "exam_name": "স্নাতকোত্তর/কামিল/সমমান",
           "group_name": "",
           "subject_name": "Statistics",
           "institute": "University of Rajshahi",
@@ -128,7 +128,7 @@
       "data": [
         {
           "type": "বোর্ড",
-          "exam_name": "মাধ্যমিক স্কুল সার্টিফিকেট",
+          "exam_name": "মাধ্যমিক স্কুল সার্টিফিকেট/দাখিল/সমমান",
           "group_name": "বিজ্ঞান বিভাগ",
           "subject_name": "",
           "institute": "Tejgaon Government High School",
@@ -141,7 +141,7 @@
         },
         {
           "type": "বোর্ড",
-          "exam_name": "উচ্চ মাধ্যমিক সার্টিফিকেট",
+          "exam_name": "উচ্চ মাধ্যমিক সার্টিফিকেট/আলীম/সমমান",
           "group_name": "বিজ্ঞান বিভাগ",
           "subject_name": "",
           "institute": "Tejgaon College",
@@ -154,7 +154,7 @@
         },
         {
           "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
-          "exam_name": "স্নাতক",
+          "exam_name": "স্নাতক/ফাজিল/সমমান",
           "group_name": "",
           "subject_name": "B.Sc.A.H",
           "institute": "Bangladesh Agricultural University",
@@ -168,7 +168,7 @@
 
         {
           "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
-          "exam_name": "স্নাতকোত্তর",
+          "exam_name": "স্নাতকোত্তর/কামিল/সমমান",
           "group_name": "",
           "subject_name": "M.P.A",
           "institute": "Dhaka University",
@@ -186,7 +186,7 @@
       "data": [
         {
           "type": "বোর্ড",
-          "exam_name": "মাধ্যমিক স্কুল সার্টিফিকেট",
+          "exam_name": "মাধ্যমিক স্কুল সার্টিফিকেট/দাখিল/সমমান",
           "group_name": "বিজ্ঞান বিভাগ",
           "subject_name": "",
           "institute": "Sadakpur High School",
@@ -199,7 +199,7 @@
         },
         {
           "type": "বোর্ড",
-          "exam_name": "উচ্চ মাধ্যমিক সার্টিফিকেট",
+          "exam_name": "উচ্চ মাধ্যমিক সার্টিফিকেট/আলীম/সমমান",
           "group_name": "বিজ্ঞান বিভাগ",
           "subject_name": "",
           "institute": "Milestone College",
@@ -213,7 +213,7 @@
 
         {
           "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
-          "exam_name": "স্নাতক",
+          "exam_name": "স্নাতক/ফাজিল/সমমান",
           "group_name": "",
           "subject_name": "Microbiology and Biotechnology",
           "institute": "Jagannath University",
@@ -226,7 +226,7 @@
         },
         {
           "type": "বিশ্ববিদ্যালয়/শিক্ষা-প্রতিষ্ঠান",
-          "exam_name": "স্নাতকোত্তর",
+          "exam_name": "স্নাতকোত্তর/কামিল/সমমান",
           "group_name": "",
           "subject_name": "Microbiology",
           "institute": "Jagannath University",

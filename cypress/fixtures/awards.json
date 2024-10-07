@@ -1,34 +1,18 @@
 {
-  "login_url": "https://oms.celloscope.net/auth/sign-in",
-  "others_info_url": "https://oms.celloscope.net/hrm/employee/others-info",
+  "login_url": "https://oms.mra.gov.bd/auth/sign-in",
+  "others_info_url": "https://oms.mra.gov.bd/hrm/employee/basic-info/list",
   "login": {
-    "user_id": "hrm",
-    "password": "asdfgh"
+    "user_id": "admin",
+    "password": "Asdf@1234"
   },
   "awards_data": [
     {
-      "employee_name": "মৃন্ময় কান্তি রায়",
+      "employee_name": "চন্দন কুমার দাস",
       "data": [
         {
           "award_name": "DG Award",
           "awarded_for": "1st Departmental Training Course",
           "awarded_by": "BIAM Foundation",
-          "award_date": {
-            "year": "",
-            "month": "",
-            "date": ""
-          },
-          "remarks": ""
-        }
-      ]
-    },
-    {
-      "employee_name": "মো: জিল্লুর রহমান",
-      "data": [
-        {
-          "award_name": "NIS",
-          "awarded_for": "NIS",
-          "awarded_by": "MRA",
           "award_date": {
             "year": "",
             "month": "",
