@@ -1,9 +1,9 @@
 {
-    "login_url": "https://oms.celloscope.net/auth/sign-in",
-    "others_info_url": "https://oms.celloscope.net/hrm/employee/others-info",
+    "login_url": "https://oms.mra.gov.bd/auth/sign-in",
+    "others_info_url": "https://oms.mra.gov.bd/hrm/employee/basic-info/list",
     "login": {
-      "user_id": "hrm",
-      "password": "asdfgh"
+      "user_id": "admin",
+      "password": "Asdf@1234"
     },
     "foreign_travel_data": [
       {

@@ -24,45 +24,46 @@ describe('Employee language Data Entry', () => {
           cy.visit(others_info_url);
   
           //   click on language info
-          cy.get(':nth-child(5) > .ant-tabs-tab-btn').click();
-          // employee search
+          cy.get('#search_box').type(item.employee_name);
+          cy.get('.anticon > img').click();
+          cy.get(':nth-child(2) > .ant-menu-title-content').click();
           cy.get(
-            '.mb-2 > .ant-form-item > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector'
-          ).type(item.employee_name);
-          cy.get('.ant-select-item-option-content').click();
+            '.bg-white > :nth-child(1) > .ant-tabs-nav-wrap > .ant-tabs-nav-list > :nth-child(2) > .ant-tabs-tab-btn'
+          ).click();
+          cy.get('.ant-tabs-nav-list > :nth-child(5)').click();
           const data = item.data;
           data.forEach((language_item: any, index: any) => {
             // language_name
             if(language_item.language_name) {
-                cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(1) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`).click();
+                cy.get(`.border-\\[0\\.5px\\].ng-untouched > .grid.mb-4 > .col-span-3 > .grid > :nth-child(1) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`).click();
                 cy.wait(200);
                 cy.get(`[title="${language_item.language_name}"] > .ant-select-item-option-content`).click();
             }
 
             // reading_level
             if(language_item.reading_level) {
-                cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(2) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`).click();
+              cy.get(`.border-\\[0\\.5px\\].ng-invalid > .grid.mb-4 > .col-span-3 > .grid > :nth-child(2) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`).click();
                 cy.wait(200);
                 cy.get(`[title="${language_item.reading_level}"] > .ant-select-item-option-content`).click();
             }
 
             // writing_level
             if(language_item.writing_level) {
-                cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(3) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`).click();
+              cy.get(`.border-\\[0\\.5px\\].ng-invalid > .grid.mb-4 > .col-span-3 > .grid > :nth-child(3) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input`).click();
                 cy.wait(200);
                 cy.get(`[title="${language_item.writing_level}"] > .ant-select-item-option-content`).click();
             }
 
             // speaking_level
             if(language_item.speaking_level) {
-                cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(4) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`).click();
+              cy.get(`.border-\\[0\\.5px\\].ng-invalid > .grid.mb-4 > .col-span-3 > .grid > :nth-child(4) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`).click();
                 cy.wait(200);
                 cy.get(`[title="${language_item.speaking_level}"] > .ant-select-item-option-content`).click();
             }
 
             // listening_level
             if(language_item.listening_level) {
-                cy.get(`:nth-child(${index + 1}) > .grid > :nth-child(5) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`).click();
+              cy.get(`.border-\\[0\\.5px\\].ng-invalid > .grid.mb-4 > .col-span-3 > .grid > :nth-child(5) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input`).click();
                 cy.wait(200);
                 cy.get(`[title="${language_item.listening_level}"] > .ant-select-item-option-content`).click();
             }

@@ -24,12 +24,13 @@ describe('Employee training Data Entry', () => {
         cy.visit(others_info_url);
 
         //   click on training info
-        cy.get(':nth-child(4) > .ant-tabs-tab-btn').click();
-        // employee search
+        cy.get('#search_box').type(item.employee_name);
+        cy.get('.anticon > img').click();
+        cy.get(':nth-child(2) > .ant-menu-title-content').click();
         cy.get(
-          '.mb-2 > .ant-form-item > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector'
-        ).type(item.employee_name);
-        cy.get('.ant-select-item-option-content').click();
+          '.bg-white > :nth-child(1) > .ant-tabs-nav-wrap > .ant-tabs-nav-list > :nth-child(2) > .ant-tabs-tab-btn'
+        ).click();
+        cy.get('app-others-info-form.ng-star-inserted > .ant-tabs > .ant-tabs-nav > .ant-tabs-nav-wrap > .ant-tabs-nav-list > :nth-child(4)').click();
         const data = item.data;
         data.forEach((training_item: any, index: any) => {
           // training_type
@@ -37,7 +38,7 @@ describe('Employee training Data Entry', () => {
             cy.get(
               `:nth-child(${
                 index + 1
-              }) > .grid > :nth-child(1) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`
+              }) > .grid > :nth-child(2) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`
             ).click();
             cy.get(
               `[title="${training_item.training_type}"] > .ant-select-item-option-content`
@@ -49,7 +50,7 @@ describe('Employee training Data Entry', () => {
             cy.get(
               `:nth-child(${
                 index + 1
-              }) > .grid > :nth-child(2) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`
+              }) > .grid > :nth-child(3) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`
             ).click();
             cy.get(
               `[title="${training_item.training_location}"] > .ant-select-item-option-content`
@@ -61,7 +62,7 @@ describe('Employee training Data Entry', () => {
             cy.get(
               `:nth-child(${
                 index + 1
-              }) > .grid > :nth-child(3) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input`
+              }) > .grid > :nth-child(4) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input`
             ).type(training_item.country);
             cy.get(
               `[title="${training_item.country}"] > .ant-select-item-option-content`
@@ -73,7 +74,7 @@ describe('Employee training Data Entry', () => {
             cy.get(
               `:nth-child(${
                 index + 1
-              }) > .grid > :nth-child(4) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`
+              }) > .grid > :nth-child(5) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`
             ).type(training_item.course_title);
           }
 
@@ -82,14 +83,16 @@ describe('Employee training Data Entry', () => {
             cy.get(
               `:nth-child(${
                 index + 1
-              }) > .grid > :nth-child(5) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`
+              }) > .grid > :nth-child(6) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`
             ).type(training_item.name_of_institute);
           }
 
           // location_of_institute
           if (training_item.location_of_institute) {
             cy.get(
-              `:nth-child(${index + 1}) > .grid > :nth-child(6) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`
+              `:nth-child(${
+                index + 1
+              }) > .grid > :nth-child(7) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`
             ).type(training_item.location_of_institute);
           }
 
@@ -98,7 +101,7 @@ describe('Employee training Data Entry', () => {
             cy.get(
               `:nth-child(${
                 index + 1
-              }) > .grid > :nth-child(7) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .block`
+              }) > .grid > :nth-child(8) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .block`
             ).click();
             cy.get('.ant-picker-header-year-btn').click();
             let clicksNeeded = 0;
@@ -126,7 +129,33 @@ describe('Employee training Data Entry', () => {
 
             cy.get(`[title="${training_item.start_date.year}"]`).click();
             cy.get('.ant-picker-header-month-btn').click();
-            cy.get(`[title="${training_item.start_date.month}"]`).click();
+            let month;
+            if (training_item.start_date.month === 'Jan') {
+              month = 'জানু';
+            } else if (training_item.start_date.month === 'Feb') {
+              month = 'ফেব';
+            } else if (training_item.start_date.month === 'Mar') {
+              month = 'মার্চ';
+            } else if (training_item.start_date.month === 'Apr') {
+              month = 'এপ্রিল';
+            } else if (training_item.start_date.month === 'May') {
+              month = 'মে';
+            } else if (training_item.start_date.month === 'Jun') {
+              month = 'জুন';
+            } else if (training_item.start_date.month === 'Jul') {
+              month = 'জুলাই';
+            } else if (training_item.start_date.month === 'Aug') {
+              month = 'আগস্ট';
+            } else if (training_item.start_date.month === 'Sep') {
+              month = 'সেপ্টেম্বর';
+            } else if (training_item.start_date.month === 'Oct') {
+              month = 'অক্টোবর';
+            } else if (training_item.start_date.month === 'Nov') {
+              month = 'নভেম্বর';
+            } else if (training_item.start_date.month === 'Dec') {
+              month = 'ডিসেম্বর';
+            }
+            cy.get(`[title="${month}"]`).click();
             cy.get(`[title="${training_item.start_date.date}"]`).click();
           }
 
@@ -135,7 +164,7 @@ describe('Employee training Data Entry', () => {
             cy.get(
               `:nth-child(${
                 index + 1
-              }) > .grid > :nth-child(8) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .block`
+              }) > .grid > :nth-child(9) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .block`
             ).click();
             cy.get('.ant-picker-header-year-btn').click();
             let clicksNeeded = 0;
@@ -163,7 +192,35 @@ describe('Employee training Data Entry', () => {
 
             cy.get(`[title="${training_item.end_date.year}"]`).click();
             cy.get('.ant-picker-header-month-btn').click();
-            cy.get(`[title="${training_item.end_date.month}"]`).click();
+
+            let month;
+            if (training_item.end_date.month === 'Jan') {
+              month = 'জানু';
+            } else if (training_item.end_date.month === 'Feb') {
+              month = 'ফেব';
+            } else if (training_item.end_date.month === 'Mar') {
+              month = 'মার্চ';
+            } else if (training_item.end_date.month === 'Apr') {
+              month = 'এপ্রিল';
+            } else if (training_item.end_date.month === 'May') {
+              month = 'মে';
+            } else if (training_item.end_date.month === 'Jun') {
+              month = 'জুন';
+            } else if (training_item.end_date.month === 'Jul') {
+              month = 'জুলাই';
+            } else if (training_item.end_date.month === 'Aug') {
+              month = 'আগস্ট';
+            } else if (training_item.end_date.month === 'Sep') {
+              month = 'সেপ্টেম্বর';
+            } else if (training_item.end_date.month === 'Oct') {
+              month = 'অক্টোবর';
+            } else if (training_item.end_date.month === 'Nov') {
+              month = 'নভেম্বর';
+            } else if (training_item.end_date.month === 'Dec') {
+              month = 'ডিসেম্বর';
+            }
+            cy.get(`[title="${month}"]`).click();
+
             cy.get(`[title="${training_item.end_date.date}"]`).click();
           }
 
@@ -172,7 +229,7 @@ describe('Employee training Data Entry', () => {
             cy.get(
               `:nth-child(${
                 index + 1
-              }) > .grid > :nth-child(9) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`
+              }) > .grid > :nth-child(10) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`
             ).type(training_item.grade_position);
           }
 
@@ -182,13 +239,13 @@ describe('Employee training Data Entry', () => {
               cy.get(
                 `:nth-child(${
                   index + 1
-                }) > .grid > :nth-child(10) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-radio-group > :nth-child(1) > :nth-child(2)`
+                }) > .grid > :nth-child(11) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-radio-group > :nth-child(1) > :nth-child(2)`
               ).click();
             } else {
               cy.get(
                 `:nth-child(${
                   index + 1
-                }) > .grid > :nth-child(10) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-radio-group > :nth-child(2) > :nth-child(2)`
+                }) > .grid > :nth-child(11) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-radio-group > :nth-child(2) > :nth-child(2)`
               ).click();
             }
           }

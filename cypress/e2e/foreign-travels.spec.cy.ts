@@ -23,31 +23,26 @@ describe('Employee foreign travel Data Entry', () => {
         // visit others info page
         cy.visit(others_info_url);
 
-        //   click on foreign travel info
-        cy.get(':nth-child(6) > .ant-tabs-tab-btn').click();
         // employee search
+        cy.get('#search_box').type(item.employee_name);
+        cy.get('.anticon > img').click();
+        cy.get(':nth-child(2) > .ant-menu-title-content').click();
         cy.get(
-          '.mb-2 > .ant-form-item > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector'
-        ).type(item.employee_name);
-        cy.get('.ant-select-item-option-content').click();
+          '.bg-white > :nth-child(1) > .ant-tabs-nav-wrap > .ant-tabs-nav-list > :nth-child(2) > .ant-tabs-tab-btn'
+        ).click();
+        cy.get('.ant-tabs-nav-list > :nth-child(6)').click();
         const data = item.data;
         data.forEach((travel_item: any, index: any) => {
           // office_order_no
           if (travel_item.office_order_no) {
-            cy.get(
-              `:nth-child(${
-                index + 1
-              }) > .border-\\[0\\.5px\\] > .md\\:grid-cols-3 > .lg\\:col-span-3 > .grid > :nth-child(1) > .ant-form-item > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`
-            ).type(travel_item.office_order_no);
+            cy.get(`:nth-child(${ index + 1 }) > .border-\\[0\\.5px\\] > .md\\:grid-cols-3 > .lg\\:col-span-3 > .grid > :nth-child(2) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`).type(
+              travel_item.office_order_no
+            );
           }
 
           // country
           if (travel_item.country) {
-            cy.get(
-              `:nth-child(${
-                index + 1
-              }) > .border-\\[0\\.5px\\] > .md\\:grid-cols-3 > .lg\\:col-span-3 > .grid > :nth-child(2) > .ant-form-item > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input`
-            ).type(travel_item.country);
+            cy.get(`.ng-invalid.ng-star-inserted > .border-\\[0\\.5px\\] > .md\\:grid-cols-3 > .lg\\:col-span-3 > .grid > :nth-child(3) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector`).type(travel_item.country);
             cy.get(
               `[title="${travel_item.country}"] > .ant-select-item-option-content`
             ).click();
@@ -56,9 +51,7 @@ describe('Employee foreign travel Data Entry', () => {
           // start_date
           if (travel_item.start_date.year) {
             cy.get(
-              `:nth-child(${
-                index + 1
-              }) > .border-\\[0\\.5px\\] > .md\\:grid-cols-3 > .lg\\:col-span-3 > .grid > :nth-child(3) > .ant-form-item > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .block > .ant-picker-input > .ng-untouched`
+              ':nth-child(4) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .block > .ant-picker-input > .ng-untouched'
             ).click();
             cy.get('.ant-picker-header-year-btn').click();
             let clicksNeeded = 0;
@@ -86,7 +79,33 @@ describe('Employee foreign travel Data Entry', () => {
 
             cy.get(`[title="${travel_item.start_date.year}"]`).click();
             cy.get('.ant-picker-header-month-btn').click();
-            cy.get(`[title="${travel_item.start_date.month}"]`).click();
+            let month;
+            if (travel_item.start_date.month === 'Jan') {
+              month = 'জানু';
+            } else if (travel_item.start_date.month === 'Feb') {
+              month = 'ফেব';
+            } else if (travel_item.start_date.month === 'Mar') {
+              month = 'মার্চ';
+            } else if (travel_item.start_date.month === 'Apr') {
+              month = 'এপ্রিল';
+            } else if (travel_item.start_date.month === 'May') {
+              month = 'মে';
+            } else if (travel_item.start_date.month === 'Jun') {
+              month = 'জুন';
+            } else if (travel_item.start_date.month === 'Jul') {
+              month = 'জুলাই';
+            } else if (travel_item.start_date.month === 'Aug') {
+              month = 'আগস্ট';
+            } else if (travel_item.start_date.month === 'Sep') {
+              month = 'সেপ্টেম্বর';
+            } else if (travel_item.start_date.month === 'Oct') {
+              month = 'অক্টোবর';
+            } else if (travel_item.start_date.month === 'Nov') {
+              month = 'নভেম্বর';
+            } else if (travel_item.start_date.month === 'Dec') {
+              month = 'ডিসেম্বর';
+            }
+            cy.get(`[title="${month}"]`).click();
             cy.get(`[title="${travel_item.start_date.date}"]`).click();
           }
 
@@ -94,11 +113,7 @@ describe('Employee foreign travel Data Entry', () => {
 
           // end_date
           if (travel_item.end_date) {
-            cy.get(
-              `:nth-child(${
-                index + 1
-              }) > .border-\\[0\\.5px\\] > .md\\:grid-cols-3 > .lg\\:col-span-3 > .grid > :nth-child(4) > .ant-form-item > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .block`
-            ).click();
+            cy.get(`.ng-invalid.ng-star-inserted > .border-\\[0\\.5px\\] > .md\\:grid-cols-3 > .lg\\:col-span-3 > .grid > :nth-child(5) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .block`).click();
             cy.get('.ant-picker-header-year-btn').click();
             let clicksNeeded = 0;
             const year = travel_item.end_date.year;
@@ -125,14 +140,40 @@ describe('Employee foreign travel Data Entry', () => {
 
             cy.get(`[title="${travel_item.end_date.year}"]`).click();
             cy.get('.ant-picker-header-month-btn').click();
-            cy.get(`[title="${travel_item.end_date.month}"]`).click();
+            let month;
+            if (travel_item.end_date.month === 'Jan') {
+              month = 'জানু';
+            } else if (travel_item.end_date.month === 'Feb') {
+              month = 'ফেব';
+            } else if (travel_item.end_date.month === 'Mar') {
+              month = 'মার্চ';
+            } else if (travel_item.end_date.month === 'Apr') {
+              month = 'এপ্রিল';
+            } else if (travel_item.end_date.month === 'May') {
+              month = 'মে';
+            } else if (travel_item.end_date.month === 'Jun') {
+              month = 'জুন';
+            } else if (travel_item.end_date.month === 'Jul') {
+              month = 'জুলাই';
+            } else if (travel_item.end_date.month === 'Aug') {
+              month = 'আগস্ট';
+            } else if (travel_item.end_date.month === 'Sep') {
+              month = 'সেপ্টেম্বর';
+            } else if (travel_item.end_date.month === 'Oct') {
+              month = 'অক্টোবর';
+            } else if (travel_item.end_date.month === 'Nov') {
+              month = 'নভেম্বর';
+            } else if (travel_item.end_date.month === 'Dec') {
+              month = 'ডিসেম্বর';
+            }
+            cy.get(`[title="${month}"]`).click();
             cy.get(`[title="${travel_item.end_date.date}"]`).click();
           }
 
-            // purpose
-            if(travel_item.purpose) {
-              cy.get(`:nth-child(${index + 1}) > .border-\\[0\\.5px\\] > .md\\:grid-cols-3 > .lg\\:col-span-3 > .grid > :nth-child(5) > .ant-form-item > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input`).type(travel_item.purpose)
-            }
+          // purpose
+          if (travel_item.purpose) {
+            cy.get(`.ng-invalid.ng-star-inserted > .border-\\[0\\.5px\\] > .md\\:grid-cols-3 > .lg\\:col-span-3 > .grid > :nth-child(6) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input-textarea-show-count > .ant-input`).type(travel_item.purpose);
+          }
 
           // checking index
           cy.log('index' + index);
