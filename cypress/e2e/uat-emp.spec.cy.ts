@@ -17,7 +17,7 @@ describe('Login Page Test', () => {
 
       cy.get('#submit-button').click();
 
-      cy.wait(1000);
+      cy.wait(2000);
 
       let count = 0;
       employee_data.forEach((item: any) => {
@@ -30,31 +30,43 @@ describe('Login Page Test', () => {
         // first_name
         cy.get('input[formControlName="first_name"]').type(item.first_name);
         // middle_name
-        if(item.middle_name){
+        if (item.middle_name) {
           cy.get('input[formControlName="middle_name"]').type(item.middle_name);
         }
         // last_name
         cy.get('input[formControlName="last_name"]').type(item.last_name);
 
         // full_name_bn
-        cy.get(':nth-child(6) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input').type(item.full_name_bn);
+        cy.get(
+          ':nth-child(6) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input'
+        ).type(item.full_name_bn);
 
         // father_name
-        cy.get(':nth-child(7) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input').type(item.father_name);
+        cy.get(
+          ':nth-child(7) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input'
+        ).type(item.father_name);
 
         // mother_name
-        cy.get(':nth-child(8) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input').type(item.mother_name);
+        cy.get(
+          ':nth-child(8) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input'
+        ).type(item.mother_name);
 
         // nid
-        cy.get(':nth-child(10) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input').type(item.nid_no);
+        cy.get(
+          ':nth-child(10) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input'
+        ).type(item.nid_no);
 
         // email
-        if(item.email) {
-          cy.get(':nth-child(11) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input').type(item.email);
+        if (item.email) {
+          cy.get(
+            ':nth-child(11) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input'
+          ).type(item.email);
         }
 
         // mobile
-        cy.get(':nth-child(12) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input').type(item.mobile);
+        cy.get(
+          ':nth-child(12) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input'
+        ).type(item.mobile);
 
         // date_of_birth
         // date_of_birth
@@ -85,7 +97,33 @@ describe('Login Page Test', () => {
 
         cy.get(`[title="${item.date_of_birth.year}"]`).click();
         cy.get('.ant-picker-header-month-btn').click();
-        cy.get(`[title="${item.date_of_birth.month}"]`).click();
+        let month;
+        if (item.date_of_birth.month === 'Jan') {
+          month = 'জানু';
+        } else if (item.date_of_birth.month === 'Feb') {
+          month = 'ফেব';
+        } else if (item.date_of_birth.month === 'Mar') {
+          month = 'মার্চ';
+        } else if (item.date_of_birth.month === 'Apr') {
+          month = 'এপ্রিল';
+        } else if (item.date_of_birth.month === 'May') {
+          month = 'মে';
+        } else if (item.date_of_birth.month === 'Jun') {
+          month = 'জুন';
+        } else if (item.date_of_birth.month === 'Jul') {
+          month = 'জুলাই';
+        } else if (item.date_of_birth.month === 'Aug') {
+          month = 'আগস্ট';
+        } else if (item.date_of_birth.month === 'Sep') {
+          month = 'সেপ্টেম্বর';
+        } else if (item.date_of_birth.month === 'Oct') {
+          month = 'অক্টোবর';
+        } else if (item.date_of_birth.month === 'Nov') {
+          month = 'নভেম্বর';
+        } else if (item.date_of_birth.month === 'Dec') {
+          month = 'ডিসেম্বর';
+        }
+        cy.get(`[title="${month}"]`).click();
         cy.get(`[title="${item.date_of_birth.date}"]`).click();
 
         // organogram
@@ -93,25 +131,38 @@ describe('Login Page Test', () => {
         cy.wait(1000);
         // cy.get(':nth-child(1) > .ant-tree-node-content-wrapper > .ng-star-inserted').click();
         cy.contains(`${item.division}`).click();
-        cy.get(':nth-child(1) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input').click();
-        cy.get(`[title="${item.designation}"] > .ant-select-item-option-content`).click();
+        cy.get(
+          ':nth-child(1) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-search > .ant-select-selection-search-input'
+        ).click();
+        cy.get(
+          `[title="${item.designation}"] > .ant-select-item-option-content`
+        ).click();
 
-        cy.get('.mt-4 > .primary-button').click();
+        // cy.get('.mt-4 > .primary-button').click();
+        cy.get('.sticky > .primary-button').click();
+
+        //pds last date
+        cy.get(':nth-child(16) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .block').click();
+        cy.get('.ant-picker-header-month-btn').click();
+        cy.get(`[title="নভেম্বর"]`).click();
+        cy.get(`[title="11/20/2024"]`).click();
 
         // user_id
-        cy.get(':nth-child(2) > :nth-child(1) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input').type(item.user_id);
+        cy.get(
+          ':nth-child(2) > :nth-child(1) > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-input'
+        ).type(item.user_id);
 
         // password
-        cy.get('.ng-tns-c630436078-18 > .ant-input').type(item.password);
+        cy.get('.ant-form-item-control-input-content > .ng-tns-c630436078-20').type(item.password);
 
         // re password
-        cy.get('.ng-tns-c630436078-19 > .ant-input').type(item.password);
+        cy.get('.ant-form-item-control-input-content > .ng-tns-c630436078-21').type(item.password);
 
         // submit
         cy.get('.primary-button').click();
         cy.get('.flex > .primary-button').click();
         count++;
-        if(count === 10) {
+        if (count === 10) {
           count = 0;
           cy.wait(3000);
         }
