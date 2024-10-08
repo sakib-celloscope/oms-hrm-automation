@@ -1,0 +1,46 @@
+{
+  "login_url": "https://oms.mra.gov.bd/auth/sign-in",
+  "others_info_url": "https://oms.mra.gov.bd/hrm/employee/basic-info/list",
+  "login": {
+    "user_id": "admin",
+    "password": "Asdf@1234"
+  },
+  "awards_data": [
+    {
+      "employee_name": "জিনাত আমান বন্যা",
+      "data": [
+        {
+          "name_en": "Tanvir Ahmed Bhuyan",
+          "name_bn": "তানভীর আহমেদ ভুঞা",
+          "mobile": "01711111111",
+          "relationship": "অন্যান্য",
+          "date_of_birth": {
+            "year": "1986",
+            "month": "Feb",
+            "date": "2/24/1986"
+          },
+          "sex": "পুরুষ",
+          "occupation": "Service"
+        }
+      ]
+    },
+    {
+      "employee_name": "আব্দুল বাকী আকন্দ",
+      "data": [
+        {
+          "name_en": "Piara Khatun",
+          "name_bn": "পিয়ারা খাতুন",
+          "mobile": "01711111111",
+          "relationship": "অন্যান্য",
+          "date_of_birth": {
+            "year": "1985",
+            "month": "May",
+            "date": "5/27/1985"
+          },
+          "sex": "মহিলা",
+          "occupation": "Housewife"
+        }
+      ]
+    }
+  ]
+}

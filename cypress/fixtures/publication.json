@@ -1,0 +1,48 @@
+{
+  "login_url": "https://oms.mra.gov.bd/auth/sign-in",
+  "others_info_url": "https://oms.mra.gov.bd/hrm/employee/basic-info/list",
+  "login": {
+    "user_id": "admin",
+    "password": "Asdf@1234"
+  },
+  "awards_data": [
+    {
+      "employee_name": "জিনাত আমান বন্যা",
+      "data": [
+        {
+          "publication_type": "International",
+          "title": "Monogenean Infestation in Indigenous Small Fishes of Bangladesh",
+          "publication_media": "RIVISTA DI PARASSITOLOGIA; Vol. XX(LXIV)-N. 2- AGOSTO 2003",
+          "publication_date": {
+            "year": "2003",
+            "month": "Aug",
+            "date": "8/1/2003"
+          },
+          "role": "Author"
+        },
+        {
+          "publication_type": "International",
+          "title": "Parasitic Monogenea of Three Exotic Fish Species to Bangladesh Waters",
+          "publication_media": "Indian Journal of Animal Sciences 76(2); 168-173, February 2006",
+          "publication_date": {
+            "year": "2005",
+            "month": "Nov",
+            "date": "11/8/2005"
+          },
+          "role": "Author"
+        },
+        {
+          "publication_type": "International",
+          "title": "Monogenean Parasites of Certain Small Indigenous Fish Species of Bangladesh",
+          "publication_media": "RIVISTA DI PARASSITOLOGIA; Vol. XX(LXIV)-N. 2- AGOSTO 2003",
+          "publication_date": {
+            "year": "2003",
+            "month": "Sep",
+            "date": "9/1/2003"
+          },
+          "role": "Author"
+        }
+      ]
+    }
+  ]
+}
