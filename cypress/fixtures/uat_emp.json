@@ -24,49 +24,7 @@
       },
       "division": "পার্সোনেল ও প্রশিক্ষণ শাখা",
       "designation": "অফিস সহকারী কাম ডাটা এন্ট্রি অপারেটর",
-      "user_id": "sazal-oacd",
-      "password": "asdfgh"
-    },
-    {
-      "employee_id": "20130167",
-      "first_name": "Md.",
-      "middle_name": "",
-      "last_name": "Fokruzzaman",
-      "full_name_bn": "মোঃ ফকরুজ্জামান",
-      "father_name": "MD. Abdul Hamid",
-      "mother_name": "Safura Khatun",
-      "nid_no": "5534416457",
-      "email": "sad_supervision2@mra.gov.bd",
-      "mobile": "01717626093",
-      "date_of_birth": {
-        "year": "1985",
-        "month": "Sep",
-        "date": "9/16/1985"
-      },
-      "division": "অনসাইট সুপারভিশন-২ শাখা",
-      "designation": "উপপরিচালক",
-      "user_id": "fokruzzaman-ed",
-      "password": "asdfgh"
-    },
-    {
-      "employee_id": "20100084",
-      "first_name": "Chandan",
-      "middle_name": "Chandra",
-      "last_name": "Karmaker",
-      "full_name_bn": "চন্দন চন্দ্র কর্মকার",
-      "father_name": "Hira lal Karmaker",
-      "mother_name": "Bijali Rani Karmaker",
-      "nid_no": "5982715640",
-      "email": "chandan.mra@gmail.com",
-      "mobile": "01878702006",
-      "date_of_birth": {
-        "year": "1986",
-        "month": "Jan",
-        "date": "1/8/1986"
-      },
-      "division": "অফসাইট মনিটরিং শাখা",
-      "designation": "অফিস সহকারী কাম ডাটা এন্ট্রি অপারেটর",
-      "user_id": "chandan-oacd",
+      "user_id": "sayed-oacd",
       "password": "asdfgh"
     }
   ]
