@@ -7,24 +7,24 @@
   },
   "employee_data": [
     {
-      "employee_id": "20100109",
-      "first_name": "Md Abu",
-      "middle_name": "Sayed",
-      "last_name": "Shiplu",
-      "full_name_bn": "মোঃ আবু সাঈদ শিপলু",
-      "father_name": "Md. Jahurul Haque",
-      "mother_name": "Khandakar Selina Akter",
-      "nid_no": "9311981711511",
-      "email": "shayed.shiplu.mra@gmail.com",
-      "mobile": "01715385516",
+      "employee_id": "20210246",
+      "first_name": "Md.",
+      "middle_name": "Imran",
+      "last_name": "Hossen",
+      "full_name_bn": "মোঃ ইমরান হোসেন",
+      "father_name": "Md. Billal Molla",
+      "mother_name": "Razia Begum",
+      "nid_no": "19932919078000064",
+      "email": "imran.mra2021@gmail.com",
+      "mobile": "01742647511",
       "date_of_birth": {
-        "year": "1982",
-        "month": "Sep",
-        "date": "9/20/1982"
+        "year": "1993",
+        "month": "Jan",
+        "date": "1/25/1993"
       },
       "division": "পার্সোনেল ও প্রশিক্ষণ শাখা",
-      "designation": "অফিস সহকারী কাম ডাটা এন্ট্রি অপারেটর",
-      "user_id": "sayed-oacd",
+      "designation": "সহকারী পরিচালক",
+      "user_id": "imran-ad",
       "password": "asdfgh"
     }
   ]

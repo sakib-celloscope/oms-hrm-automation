@@ -2207,6 +2207,27 @@
       "designation": "অফিস সহকারী কাম ডাটা এন্ট্রি অপারেটর",
       "user_id": "chandan-oacd",
       "password": "asdfgh"
+    },
+    {
+      "employee_id": "20210246",
+      "first_name": "Md.",
+      "middle_name": "Imran",
+      "last_name": "Hossen",
+      "full_name_bn": "মোঃ ইমরান হোসেন",
+      "father_name": "Md. Billal Molla",
+      "mother_name": "Razia Begum",
+      "nid_no": "19932919078000064",
+      "email": "imran.mra2021@gmail.com",
+      "mobile": "01742647511",
+      "date_of_birth": {
+        "year": "1993",
+        "month": "Jan",
+        "date": "1/25/1993"
+      },
+      "division": "পার্সোনেল ও প্রশিক্ষণ শাখা",
+      "designation": "সহকারী পরিচালক",
+      "user_id": "imran-ad",
+      "password": "asdfgh"
     }
   ]
 }
