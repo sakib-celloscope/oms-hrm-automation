@@ -2186,6 +2186,27 @@
       "designation": "যুগ্মপরিচালক",
       "user_id": "murshed-jd",
       "password": "asdfgh"
+    },
+    {
+      "employee_id": "20100084",
+      "first_name": "Chandan",
+      "middle_name": "Chandra",
+      "last_name": "Karmaker",
+      "full_name_bn": "চন্দন চন্দ্র কর্মকার",
+      "father_name": "Hira lal Karmaker",
+      "mother_name": "Bijali Rani Karmaker",
+      "nid_no": "5982715640",
+      "email": "chandan.mra@gmail.com",
+      "mobile": "01878702006",
+      "date_of_birth": {
+        "year": "1986",
+        "month": "Jan",
+        "date": "1/8/1986"
+      },
+      "division": "অফসাইট মনিটরিং শাখা",
+      "designation": "অফিস সহকারী কাম ডাটা এন্ট্রি অপারেটর",
+      "user_id": "chandan-oacd",
+      "password": "asdfgh"
     }
   ]
 }
